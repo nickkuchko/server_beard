@@ -1,5 +1,7 @@
 # server_beard 
 
+![Build Status](https://github.com/nickkuchko/server_beard/actions/workflows/CI.yml/badge.svg?branch=main)
+
 This is a server for testing json responses
 
 Look through requirements.txt file 
