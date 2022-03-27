@@ -12,19 +12,18 @@
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-<h2> This is a server for testing json responses </h2>
 
 Look through requirements.txt file 
 
-<h2> Routes </h2>
+<h4> Routes </h4>
 
-[users:] (http://127.0.0.1:8000/beard/users/)
-[posts:] (http://127.0.0.1:8000/beard/posts/)
-[comments:] (http://127.0.0.1:8000/beard/comments/)
-[albums:] (http://127.0.0.1:8000/beard/albums/)
-[photos:] (http://127.0.0.1:8000/beard/photos/)
-[todos:] (http://127.0.0.1:8000/beard/todos/)
+- [users:] (http://127.0.0.1:8000/beard/users/)
+- [posts:] (http://127.0.0.1:8000/beard/posts/)
+- [comments:] (http://127.0.0.1:8000/beard/comments/)
+- [albums:] (http://127.0.0.1:8000/beard/albums/)
+- [photos:] (http://127.0.0.1:8000/beard/photos/)
+- [todos:] (http://127.0.0.1:8000/beard/todos/)
 
-<h2> Start JSON Server </h2>
+<h4> Start JSON Server </h4>
 
 python manage.py runserver 
