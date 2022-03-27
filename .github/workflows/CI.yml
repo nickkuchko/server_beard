@@ -32,7 +32,10 @@ jobs:
       #   if: steps.pip-cache.outputs.cache-hit != 'true'
       #   run: pip install flake8
 
+      # - name: Run flake8
+      #   run: | # mutliline script. Place a pipe to preserve \n
+      #     echo 'Running flake'        
+      #     flake8 .
+
       - name: Run flake8
-        run: | # mutliline script. Place a pipe to preserve \n
-          echo 'Running flake'        
-          flake8 .
+        run: flake8 .
