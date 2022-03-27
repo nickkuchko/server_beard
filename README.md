@@ -1,5 +1,5 @@
 # server_beard 
-
+<!-- 
 ![Build Status](https://github.com/nickkuchko/server_beard/actions/workflows/CI.yml/badge.svg?branch=main)
 
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
@@ -10,12 +10,12 @@
 
 ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white) 
 
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) -->
 
 
 Look through requirements.txt file 
 
-<h4> Routes </h4>
+<!-- <h4> Routes </h4>
 
 - [users:] (http://127.0.0.1:8000/beard/users/)
 - [posts:] (http://127.0.0.1:8000/beard/posts/)
@@ -24,6 +24,6 @@ Look through requirements.txt file
 - [photos:] (http://127.0.0.1:8000/beard/photos/)
 - [todos:] (http://127.0.0.1:8000/beard/todos/)
 
-<h4> Start JSON Server </h4>
+<h4> Start JSON Server </h4> -->
 
 python manage.py runserver 
