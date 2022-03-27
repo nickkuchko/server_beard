@@ -27,10 +27,10 @@ jobs:
 
           key: pip-${{ hashFiles('**/requirements.txt') }}
 
-      - name: Install flake8
-        # if no cache hit in our pip cache
-        if: steps.pip-cache.outputs.cache-hit != 'true'
-        run: pip install flake8
+      # - name: Install flake8
+      #   # if no cache hit in our pip cache
+      #   if: steps.pip-cache.outputs.cache-hit != 'true'
+      #   run: pip install flake8
 
       - name: Run flake8
         run: | # mutliline script. Place a pipe to preserve \n
