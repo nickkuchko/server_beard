@@ -20,7 +20,7 @@ jobs:
           python-version: 3.9
       
       - uses: actions/cache@v2
-        id: cache-venv  # name for referring later
+        id: cache-venv
         with:
           path: ./.venv/  # what we cache: the virtualenv
           # The cache key depends on requirements.txt
@@ -32,7 +32,4 @@ jobs:
            pip install -r requirements.txt
       
       - name: Run flake8
-        run: | # mutliline script. Place a pipe to preserve \n
-          echo . ./.venv/bin/activate
-          echo 'Running flake'        
-          flake8 .
+        run:  . ./.venv/bin/activate && flake8 .
