@@ -33,5 +33,5 @@ jobs:
       
       - name: Run flake8
         run: |
-          echo . ./.venv/bin/activate  
+          echo 'Runing flake' 
           flake8 .
