@@ -13,6 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2                                       
+        with:                                                               
+          python-version: 3.9
       
       - uses: actions/cache@v2
         id: cache-venv  # name for referring later
@@ -25,11 +30,6 @@ jobs:
         # Build a virtualenv, but only if it doesn't already exist
       - run: python -m venv ./.venv && . ./.venv/bin/activate && 
            pip install -r requirements.txt
-
-      - name: Set up Python
-        uses: actions/setup-python@v2                                       
-        with:                                                               
-          python-version: 3.9
       
       - name: Run flake8
         run: | # mutliline script. Place a pipe to preserve \n
