@@ -24,7 +24,7 @@ jobs:
         with:
           path: |
             ~/.cache/pip
-            ./.venv/  # cache the virtualenv
+            .venv  # cache the virtualenv
 
           key: ${{ runner.os }}-venv-${{ hashFiles('**/requirements*.txt') }}
           restore-keys: |
@@ -35,7 +35,7 @@ jobs:
       
       - name: Install flake8
         # if no cache hit in our pip cache
-        if: steps.pip-cache.outputs.cache-hit != 'true'
+        if: steps.cache-venv.outputs.cache-hit != 'true'
         run: pip install flake8
 
       - name: Run flake8
