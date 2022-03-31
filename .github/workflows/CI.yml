@@ -26,8 +26,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-
       
-      - run: python -m venv ./.venv && . ./.venv/bin/activate && 
-           pip install -r requirements.txt
+      - run: pip install -r requirements.txt
       
       - name: Install flake8
         # if no cache hit in our pip cache
