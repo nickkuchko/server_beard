@@ -26,7 +26,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-
       
-      - run: pip install -r requirements.txt
+      - name: Install requirements
+        run: pip install -r requirements.txt
       
       - name: Install flake8
         # if no cache hit in our pip cache
