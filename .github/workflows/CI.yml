@@ -33,6 +33,6 @@ jobs:
       
       - name: Run flake8
         run: | # mutliline script. Place a pipe to preserve \n
-          . ./.venv/bin/activate
+          echo . ./.venv/bin/activate
           echo 'Running flake'        
           flake8 .
